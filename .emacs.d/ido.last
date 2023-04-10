@@ -1,0 +1,104 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/home/ryazanov/MyCode/GoCode/SnippetBox/GoSnippetBox/snippetbox/cmd/" . "web/")
+ ("/home/ryazanov/MyCode/GoCode/SnippetBox/GoSnippetBox/snippetbox/" . "cmd/")
+ ("/home/ryazanov/MyCode/GoCode/SnippetBox/GoSnippetBox/" . "TestSSLSiteInGo/")
+ ("/home/ryazanov/MyCode/GoCode/SnippetBox/cmd/" . "web/")
+ ("/home/ryazanov/MyCode/GoCode/SnippetBox/" . "GoSnippetBox/")
+ ("/home/ryazanov/MyCode/GoCode/" . "SnippetBox/")
+ ("/home/ryazanov/" . "KnowledgeBase/")
+ ("/home/ryazanov/.emacs.d/plugins/" . "go-mode.el-master/")
+ ("/home/ryazanov/.emacs.d/elpa/archives/" . "gnu/")
+ ("/home/ryazanov/.emacs.d/elpa/" . "archives/")
+ ("/home/ryazanov/.emacs.d/" . "plugins/")
+ ("/home/" . "ryazanov/")
+ ("/" . "home/")
+ ("/home/ryazanov/MyCode/" . "GoCode/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/home/ryazanov/KnowledgeBase/"
+ "/home/ryazanov/Documents/"
+ "/home/ryazanov/MyCode/GoCode/SnippetBox/GoSnippetBox/TestSSLSiteInGo/"
+ "/home/ryazanov/MyCode/GoCode/SnippetBox/GoSnippetBox/snippetbox/cmd/web/"
+ "/home/ryazanov/MyCode/GoCode/SnippetBox/cmd/web/"
+ "/home/ryazanov/MyCode/GoCode/SnippetBox/backup/"
+ "/home/ryazanov/MyCode/GoCode/"
+ "/home/ryazanov/"
+ "/home/ryazanov/.emacs.d/plugins/color-theme/"
+ "/home/ryazanov/.emacs.d/elpa/archives/gnu/"
+ "/home/ryazanov/MyCode/CppCode/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "protected"
+ "monitor.txt"
+ "clients.txt"
+ "transfer.txt"
+ "doc"
+ "Monitor - Grafana.html"
+ "server.go"
+ "main.go"
+ "helpers.go"
+ "myServerConfig.org"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/home/ryazanov/KnowledgeBase/" (25649 10492 585371 152000) "../" "./")
+
+ ("/home/ryazanov/" (25649 10492 585371 152000) "Music/" ".fltk/" ".links/" ".rediscli_history" ".emacs" ".bashrc" "myLog2.txt" ".telegram-cli/" "Public/" "#.emacs#" ".file" "Videos/" "tbmed.sql" "MonitoringWebXX/" "#.newsrc-dribble#" ".vnc/" "Documents/" ".viminfo" ".cookiecutter_replay/" "shell.nix" "django-dev/" "parserGrafana" ".vim/" ".bash_history" "Pictures/" ".java/" ".config/" "Downloads.tar.gz" ".gtkrc-2.0" ".sshCopy08_21_22/" ".cookiecutters/" "sdk/" ".pki/" "testSSHpexpect.py" "logfile" "share/" "go/" "test.eml" "version" ".gitconfig" "result" "Desktop/" ".mozilla/" ".python_history" ".gnupg/" ".ansible/" ".profile" ".Xauthority" "Downloads/" ".vscode/" ".nix-profile/" ".local/" "../" "postgres.nix" "News/" "KnowledgeBase/" ".nix-defexpr/" "\\" ".wget-hsts" "Templates/" "default.nix" "./" ".nix-channels" "emacsOld" ".esd_auth" ".docker/" "majoCommands" "MyCode/" "cs" ".tmp/" ".emacs.d/" "fileJson.json" ".myBashScripts/" ".cache/" ".kde/" "lib/" "c4ln.log" "parserKibana" "testPy.txt" ".ssh/" ".compose-cache/" ".lesshst" ".MonitoringServers/" "numberWeb.txt" "cs.save" ".thunderbird/")
+
+ ("/home/ryazanov/Documents/" (25649 7254 895377 627000) "Отчет по _malware_493fd9bf5071d2c728eb1ad0a30c6c31.html" "Отчет по _malware_6871e3be2117127117aa2ff76347ab12.html" "Отчет по _malware_a823179a2c832a13f5c47308e2f1d45a.html" "Отчет по _malware_dc25afc19631a39f4cac2e771b7bb71c.html" "Отчет по _malware_8ca76605e5a19ee29438db1f4bcbacb7.html" "Отчет по _malware_37a2fd65a68c83bc296f3c93d5914337.html" "Resgate agora mesmo seus pontos livelo. - Pontos Livelo <noreply@todaysauto.net> - 2023-02-01 1040.eml" "transfer.txt" "Отчет по _malware_6871e3be2117127117aa2ff76347ab12_files/" "Отчет по _malware_c92a755a768ed4acea6779d80d6111d5.html" "Отчет по _malware_dc25afc19631a39f4cac2e771b7bb71c_files/" ".#monitor.txt" "Отчет по _malware_6429157d832264c5347770ce33fd1901_files/" "Отчет по _malware_2a4e77b8b7b00a8a43324a6b508ec71f_files/" "Отчет по _malware_493fd9bf5071d2c728eb1ad0a30c6c31_files/" "forSlackmessage.txt" "Отчет по _malware_b15b015ac485fa5b9274f6d26326b70d_files/" "Отчет по _malware_9143c7d89854a8bae9673e20e73d4a39.html" "Отчет по _malware_ae1e85fa67a5cafcd1c2f10b0b51d147_files/" "Отчет по _malware_6429157d832264c5347770ce33fd1901.html" "Отчет по _malware_2f90e77ea9242d86c0b62aa7ca22d70e_files/" "Отчет по _malware_d1ed975a9213f526e2812ffe308022fd_files/" "Отчет по _malware_9143c7d89854a8bae9673e20e73d4a39_files/" "Отчет по _malware_8ca76605e5a19ee29438db1f4bcbacb7_files/" "Отчет по _malware_acf68a84cea660caa1e77f7b91328466.html" "Отчет по _malware_e1734941a5750579021035db5faa88ad.html" ".#clients.txt" "Отчет по _malware_b15b015ac485fa5b9274f6d26326b70d.html" "Отчет по _malware_4b4b8bf967ce306460766c4d61d80eca_files/" "Отчет по _malware_b76b68da125e149d0c07a81a100bf6c9.html" "Отчет по _malware_cbbbcfbd2b51fcf6d6d2b906ba40449a.html" "Отчет по _malware_1afe85d1ce62ba2b3a16fdbbc9a2e411_files/" "Отчет по _malware_acf68a84cea660caa1e77f7b91328466_files/" "clients.txt" "Отчет по _malware_0cc66859338260561e8a6ed3c743ddfa_files/" "Отчет по _malware_7d45c103831c83929fb8dbd169ebbff2.html" "Отчет по _malware_2f90e77ea9242d86c0b62aa7ca22d70e.html" "Отчет по _malware_83a017c3e00d2dd1968c116085ac1acf.html" "Отчет по _malware_83a017c3e00d2dd1968c116085ac1acf_files/" "Отчет по _malware_70200ec8c0614e7acf079f7536b59cb8.html" "Отчет по _malware_cbbbcfbd2b51fcf6d6d2b906ba40449a_files/" "Отчет по _malware_ae1e85fa67a5cafcd1c2f10b0b51d147.html" "Отчет по _malware_2a4e77b8b7b00a8a43324a6b508ec71f.html" "Отчет по _malware_7d45c103831c83929fb8dbd169ebbff2_files/" "Monitor - Grafana.html" "Отчет по _malware_ec9f1d43ec21c46c87786488aa4707fb.html" "Отчет по _malware_1afe85d1ce62ba2b3a16fdbbc9a2e411.html" "Отчет по _malware_a823179a2c832a13f5c47308e2f1d45a_files/" "Monitor - Grafana_files/" "Отчет по _malware_70200ec8c0614e7acf079f7536b59cb8_files/" "MoveSitesInAcc232802/" "Отчет по _malware_ec103278f5cecb7cf0c58ec7cec8561f_files/" "Отчет по _malware_e1734941a5750579021035db5faa88ad_files/" "Отчет по _malware_0cc66859338260561e8a6ed3c743ddfa.html" "Отчет по _malware_ec9f1d43ec21c46c87786488aa4707fb_files/" "Отчет по _malware_d1ed975a9213f526e2812ffe308022fd.html" "Отчет по _malware_4b4b8bf967ce306460766c4d61d80eca.html" "Отчет по _malware_ec103278f5cecb7cf0c58ec7cec8561f.html" "Отчет по _malware_b76b68da125e149d0c07a81a100bf6c9_files/" "Отчет по _malware_37a2fd65a68c83bc296f3c93d5914337_files/" "Отчет по _malware_c92a755a768ed4acea6779d80d6111d5_files/" "../" "./")
+
+ ("/home/ryazanov/MyCode/GoCode/" (25629 61934 109277 856000) "SnippetBox/" "DockerTests/" "ExperimentsGo/" "MarketBotGo20/" "MarketBotsGo/" "go.work" "GoLessons/" "../" "./" ".#hello.go" "MajorGo/")
+
+ ("/home/ryazanov/.myBashScripts/" (25415 59246 774608 629000) "digSite.sh" "parseAndFindIP.sh" "noProtectList.txt" "message.eml" "myLog.txt" "protectWeb21_07_2022.sh" "rsyncS3TOS4.sh" "majoteh.sh" "autorKvmNvme.sh" "bareos.sh" "rsyncMajotehToSup.sh" "readerMail.sh" "../" "hello.pl" ".git/" "protectWebXX_07_2022.sh" "autorVM_A_Tarif.sh" "sshInWeb.sh" "protectIpWeb_07_2022.sh" "./" "sshKvmX.sh" "grepList.sh" "smtpstaff.sh" "protectWebAndFindList.sh" "webmail.sh")
+
+ ("/home/ryazanov/.emacs.d/plugins/color-theme/" (25370 24674 622175 23000) "color-theme-autoloads.elc" "color-theme-autoloads.in" "README" "AUTHORS" "color-theme-autoloads.el" "./" "HACKING" "color-theme.el" "build-stamp" "themes/" "result/" "COPYING" "ChangeLog" "BUGS" "configure-stamp" "Makefile" "Makefile.defs" "../")
+
+ ("/home/ryazanov/Downloads/" (25390 42774 605725 823000) "tdlfFile.txt" "./" "12400606.key" "12400606.csr" "../")
+
+ ("/home/ryazanov/MyCode/GoCode/SnippetBox/GoSnippetBox/TestSSLSiteInGo/" (25370 23138 674834 341000) "./" "server.go" "../")
+
+ ("/home/ryazanov/MyCode/GoCode/SnippetBox/" (25367 32979 82940 929000) "GoSnippetBox/" ".git/" "./" "../")
+
+ ("/home/ryazanov/MyCode/GoCode/SnippetBox/GoSnippetBox/snippetbox/cmd/web/" (25369 33269 934287 584000) "main.go" "./" "handlers.go" "routes.go" "main.go~" "helpers.go" "templates.go" "../")
+
+ ("/home/ryazanov/MyCode/GoCode/SnippetBox/GoSnippetBox/snippetbox/cmd/" (25367 33020 349489 948000) "./" "web/" "../")
+
+ ("/home/ryazanov/MyCode/GoCode/SnippetBox/GoSnippetBox/snippetbox/" (25367 33020 350489 962000) "go.mod" "./" "pkg/" "SQL/" "ssl/" "ui/" "cmd/" "go.sum" "../")
+
+ ("/home/ryazanov/MyCode/GoCode/SnippetBox/GoSnippetBox/" (25369 32618 691288 14000) "nginxSettings.txt" ".git/" "README" "./" "TestSSLSiteInGo/" "snippetbox-25.zip" "snippetbox/" "snippetboxMyStab.tar.gz" "myDump.sql" "../")
+
+ ("/home/ryazanov/MyCode/GoCode/SnippetBox/cmd/web/" (25358 59272 202077 44000) "main.go" "./" "../")
+
+ ("/home/ryazanov/.emacs.d/elpa/archives/gnu/" (25358 46935 889643 786000) "./" "archive-contents" "../")
+
+ ("/home/ryazanov/MyCode/GoCode/SnippetBox/backup/" (25358 40683 20107 689000) "./" "myServerConfig.txt" "myServerConfig.org" "../")
+
+ ("/home/ryazanov/MyCode/GoCode/SnippetBox/cmd/" (25358 38693 400976 279000) "./" "web/" "../")
+
+ ("/home/ryazanov/.emacs.d/plugins/go-mode.el-master/" (25312 37309 0 0) "go-guru.el" "AUTHORS.old" ".gitignore" ".github/" "AUTHORS" "./" "README.md" "go-rename.el" "go-mode.el" "LICENSE" "NEWS" ".mailmap" "test/" "../" "generate_authors.sh")
+
+ ("/home/ryazanov/.emacs.d/plugins/" (25355 29228 455853 810000) "go-mode.el-master/" "auto-complete/" "./" "color-theme/" "../")
+
+ ("/home/ryazanov/.emacs.d/" (25356 28593 709069 160000) "auto-save-list/" "./" "elpa/" "color-theme-ahungry/" "ido.last" "plugins/" "ede-projects.el" "semanticdb/" "eshell/" "../")
+
+ ("/home/ryazanov/.emacs.d/elpa/archives/" (25355 14230 737230 190000) "./" "gnu/" "../")
+
+ ("/home/ryazanov/.emacs.d/elpa/" (25355 14230 737230 190000) "archives/" "./" "../")
+
+ ("/home/" (25310 17134 695388 644000) "protasov/" "hozyashev/" "mukhin/" "zelinskij/" "gfs72_office_pool/" "ryazanov/" "guest/" "./" "kuris/" "savenkov/" "pyhalov/" "pudov/" "rash/" "surjenko/" "gorbachev/" "lyashenko/" "support/" "busuev/" "zverev/" "jukov/" "../" "biryukov/" "urguev/")
+
+ ("/home/ryazanov/MyCode/" (25355 13963 801882 747000) "./" "CppCode/" "GoCode/" "../")
+
+ ("/home/ryazanov/MyCode/CppCode/" (25355 13963 805882 798000) "hello.cpp" "./" "../")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t

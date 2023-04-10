@@ -1,0 +1,3 @@
+find "gometalinter-config.json" /
+ls -a ~
+find "gometalinter-config.json" /home/ryazanov/go/

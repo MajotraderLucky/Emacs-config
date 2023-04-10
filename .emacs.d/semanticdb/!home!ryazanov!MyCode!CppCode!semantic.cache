@@ -1,0 +1,18 @@
+;; Object semanticdb-project-database-file-aeac84
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-aeac84"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-aeac90"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [28 47])
+            ("main" function (:type "int") nil [49 110]))          
+      :file "hello.cpp"
+      :pointmax 111
+      :fsize 110
+      :lastmodtime '(25355 13963 802882 760000)
+      :unmatched-syntax nil))
+  :file "!home!ryazanov!MyCode!CppCode!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
