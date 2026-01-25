@@ -1,0 +1,23 @@
+# Elpaca package manager
+elpaca/
+
+# Package.el packages
+elpa/
+
+# Native compilation cache
+eln-cache/
+
+# Auto-generated files
+auto-save-list/
+recentf
+history
+custom.el
+*.elc
+
+# Backup files
+*~
+\#*\#
+.\#*
+
+# Transient state
+transient/
