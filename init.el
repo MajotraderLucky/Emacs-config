@@ -72,10 +72,11 @@
 
 ;;; ============ THEME ============
 
-(use-package doom-themes
-  :config
-  (load-theme 'doom-tokyo-night t)
-  (doom-themes-visual-bell-config))
+;; Load doom-dracula theme immediately
+(require 'doom-themes)
+(load-theme 'doom-dracula t)
+(doom-themes-visual-bell-config)
+(message ">>> doom-dracula theme loaded!")
 
 ;;; ============ COMPLETION ============
 
