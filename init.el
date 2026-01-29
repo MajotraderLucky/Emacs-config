@@ -221,6 +221,39 @@
     (add-hook 'magit-pre-refresh-hook 'diff-hl-magit-pre-refresh)
     (add-hook 'magit-post-refresh-hook 'diff-hl-magit-post-refresh)))
 
+;;; ============ ORG-MODE ============
+
+(use-package org
+  :ensure nil
+  :bind (("C-c a" . org-agenda)
+         ("C-c c" . org-capture)
+         ("C-c l" . org-store-link))
+  :custom
+  ;; TODO states for Kanban
+  (org-todo-keywords
+   '((sequence "TODO(t)" "ACTIVE(a)" "WAIT(w)" "BLOCKED(b)" "|" "DONE(d)" "CANCELLED(c)")))
+  ;; Colors for TODO states
+  (org-todo-keyword-faces
+   '(("TODO" . (:foreground "#ff79c6" :weight bold))
+     ("ACTIVE" . (:foreground "#50fa7b" :weight bold))
+     ("WAIT" . (:foreground "#ffb86c" :weight bold))
+     ("BLOCKED" . (:foreground "#ff5555" :weight bold))
+     ("DONE" . (:foreground "#6272a4" :weight bold))
+     ("CANCELLED" . (:foreground "#6272a4" :strike-through t))))
+  ;; Log completion time
+  (org-log-done 'time)
+  ;; Clocking
+  (org-clock-persist t)
+  ;; Pretty bullets
+  (org-hide-leading-stars t)
+  (org-startup-indented t)
+  :config
+  (org-clock-persistence-insinuate))
+
+;; Pretty bullets for org
+(use-package org-bullets
+  :hook (org-mode . org-bullets-mode))
+
 ;;; ============ TELEGRAM ============
 
 (use-package telega

@@ -24,3 +24,6 @@ transient/
 
 # Cache directory
 .cache/
+
+# Save-place data
+places
