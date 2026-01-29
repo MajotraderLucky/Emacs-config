@@ -8,9 +8,12 @@
         ("nongnu" . "https://elpa.nongnu.org/nongnu/")))
 (package-initialize)
 
+;; Refresh package contents if needed
+(unless package-archive-contents
+  (package-refresh-contents))
+
 ;; Install use-package if needed
 (unless (package-installed-p 'use-package)
-  (package-refresh-contents)
   (package-install 'use-package))
 (require 'use-package)
 (setq use-package-always-ensure t)
@@ -183,16 +186,22 @@
 
 ;;; ============ TERMINAL ============
 
-(use-package vterm
-  :commands vterm
-  :bind ("C-c t" . vterm)
-  :custom
-  (vterm-max-scrollback 10000)
-  (vterm-shell "/bin/bash"))
+;; Use eshell (built-in, always works)
+(global-set-key (kbd "C-c t") 'eshell)
+
+;; vterm disabled - was causing freezes
+;; (use-package vterm
+;;   :commands vterm
+;;   :bind ("C-c t" . vterm)
+;;   :custom
+;;   (vterm-max-scrollback 10000)
+;;   (vterm-shell "/bin/bash"))
 
 ;;; ============ GIT ============
 
+;; Magit - install manually: M-x package-refresh-contents, then M-x package-install RET magit
 (use-package magit
+  :defer t
   :bind (("C-c g g" . magit-status)
          ("C-c g l" . magit-log-current)
          ("C-c g b" . magit-blame)
@@ -204,11 +213,13 @@
 
 (use-package diff-hl
   :hook ((prog-mode . diff-hl-mode)
-         (text-mode . diff-hl-mode)
-         (magit-pre-refresh . diff-hl-magit-pre-refresh)
-         (magit-post-refresh . diff-hl-magit-post-refresh))
+         (text-mode . diff-hl-mode))
   :config
-  (diff-hl-flydiff-mode))
+  (diff-hl-flydiff-mode)
+  ;; Magit integration (when magit loads)
+  (with-eval-after-load 'magit
+    (add-hook 'magit-pre-refresh-hook 'diff-hl-magit-pre-refresh)
+    (add-hook 'magit-post-refresh-hook 'diff-hl-magit-post-refresh)))
 
 ;;; ============ KEYBINDINGS ============
 
