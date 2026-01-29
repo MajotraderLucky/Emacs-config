@@ -79,9 +79,9 @@ Uses built-in `package.el` with `use-package` for declarative configuration.
 
 ### Terminal
 
-| Package | Purpose                  |
-|---------|--------------------------|
-| vterm   | Full terminal emulator   |
+| Package | Purpose                            |
+|---------|------------------------------------|
+| eshell  | Emacs shell (built-in, no freezes) |
 
 ## Keybindings
 
@@ -140,7 +140,7 @@ Uses built-in `package.el` with `use-package` for declarative configuration.
 |-----------|------------------------|----------------------|
 | C-c e     | treemacs               | Toggle file tree     |
 | C-c E     | treemacs-select-window | Focus file tree      |
-| C-c t     | vterm                  | Open terminal        |
+| C-c t     | eshell                 | Open terminal        |
 | C-c /     | comment-line           | Toggle comment       |
 | C-x k     | kill-current-buffer    | Close buffer         |
 
@@ -162,6 +162,25 @@ In `magit-status` buffer (C-c g g):
 | g     | Refresh                   |
 | q     | Quit                      |
 | ?     | Show all keybindings      |
+
+## Eshell Quick Reference
+
+Eshell is a built-in Emacs shell. All standard Emacs keybindings work.
+
+| Key     | Action                  |
+|---------|-------------------------|
+| M-p     | Previous command        |
+| M-n     | Next command            |
+| C-c C-p | Jump to previous prompt |
+| C-c C-n | Jump to next prompt     |
+| C-l     | Clear screen            |
+| C-c     | Copy (CUA mode)         |
+| C-v     | Paste (CUA mode)        |
+
+**Special features:**
+- Run elisp: `(+ 1 2)` returns 3
+- TRAMP paths: `cd /ssh:user@host:/path`
+- Output is editable text
 
 ## Basic Settings
 
