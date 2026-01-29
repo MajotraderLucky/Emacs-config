@@ -89,6 +89,13 @@ Uses built-in `package.el` with `use-package` for declarative configuration.
 |---------|------------------------------------|
 | telega  | Telegram client (requires TDLib)   |
 
+### Organization
+
+| Package     | Purpose                              |
+|-------------|--------------------------------------|
+| org-mode    | Notes, tasks, time tracking, kanban  |
+| org-bullets | Pretty bullets for org headings      |
+
 ## Keybindings
 
 ### File & Search (C-c f)
@@ -150,6 +157,8 @@ Uses built-in `package.el` with `use-package` for declarative configuration.
 | C-c /     | comment-line           | Toggle comment       |
 | C-x k     | kill-current-buffer    | Close buffer         |
 | F9        | telega                 | Open Telegram        |
+| C-c a     | org-agenda             | Org agenda view      |
+| C-c c     | org-capture            | Quick capture        |
 
 ## Magit Quick Reference
 
@@ -224,6 +233,53 @@ Telegram client for Emacs. Requires TDLib installed separately.
 2. Enter phone number (+79001234567)
 3. Enter code from SMS/Telegram
 4. Enter 2FA password if enabled
+
+## Org-mode Quick Reference
+
+Org-mode for notes, tasks, kanban boards, and time tracking.
+
+**TODO states:** TODO -> ACTIVE -> WAIT/BLOCKED -> DONE/CANCELLED
+
+**Navigation:**
+
+| Key           | Action                    |
+|---------------|---------------------------|
+| TAB           | Fold/unfold section       |
+| S-TAB         | Fold/unfold all           |
+| M-up/down     | Move heading up/down      |
+| M-left/right  | Promote/demote heading    |
+| C-c C-n/p     | Next/previous heading     |
+
+**Tasks:**
+
+| Key           | Action                    |
+|---------------|---------------------------|
+| C-c C-t       | Change TODO state         |
+| S-left/right  | Quick state change        |
+| C-c C-c       | Toggle checkbox [X]       |
+| C-c C-s       | Schedule task             |
+| C-c C-d       | Set deadline              |
+
+**Time tracking:**
+
+| Key           | Action                    |
+|---------------|---------------------------|
+| C-c C-x C-i   | Clock in (start timer)    |
+| C-c C-x C-o   | Clock out (stop timer)    |
+| C-c C-x C-r   | Insert clock report       |
+| C-c C-x C-d   | Display clocked time      |
+
+**Links and export:**
+
+| Key           | Action                    |
+|---------------|---------------------------|
+| C-c C-l       | Insert/edit link          |
+| C-c C-o       | Open link at point        |
+| C-c C-e       | Export menu               |
+
+**Column view (kanban):**
+- `C-c C-x C-c` - enable column view
+- `q` - quit column view
 
 ## Basic Settings
 
