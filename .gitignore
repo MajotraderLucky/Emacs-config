@@ -21,3 +21,6 @@ custom.el
 
 # Transient state
 transient/
+
+# Cache directory
+.cache/
