@@ -254,6 +254,12 @@
 (use-package org-bullets
   :hook (org-mode . org-bullets-mode))
 
+;;; ============ BROWSER ============
+
+;; Use qutebrowser for opening URLs
+(setq browse-url-generic-program "/usr/bin/qutebrowser")
+(setq browse-url-browser-function 'browse-url-generic)
+
 ;;; ============ TELEGRAM ============
 
 (use-package telega
@@ -263,7 +269,10 @@
   (telega-use-images t)
   (telega-emoji-use-images nil)
   (telega-chat-fill-column 80)
-  (telega-proxies nil))
+  (telega-proxies nil)
+  ;; Use qutebrowser for links
+  (telega-browse-url-alist '((".*" . (lambda (url &rest args)
+                                        (start-process "qutebrowser" nil "qutebrowser" url))))))
 
 ;;; ============ KEYBINDINGS ============
 

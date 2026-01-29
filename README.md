@@ -96,6 +96,10 @@ Uses built-in `package.el` with `use-package` for declarative configuration.
 | org-mode    | Notes, tasks, time tracking, kanban  |
 | org-bullets | Pretty bullets for org headings      |
 
+### Browser
+
+All URLs from Emacs (including telega) open in **qutebrowser**.
+
 ## Keybindings
 
 ### File & Search (C-c f)
