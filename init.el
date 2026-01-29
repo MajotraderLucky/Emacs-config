@@ -221,6 +221,17 @@
     (add-hook 'magit-pre-refresh-hook 'diff-hl-magit-pre-refresh)
     (add-hook 'magit-post-refresh-hook 'diff-hl-magit-post-refresh)))
 
+;;; ============ TELEGRAM ============
+
+(use-package telega
+  :commands telega
+  :bind ("<f9>" . telega)
+  :custom
+  (telega-use-images t)
+  (telega-emoji-use-images nil)
+  (telega-chat-fill-column 80)
+  (telega-proxies nil))
+
 ;;; ============ KEYBINDINGS ============
 
 ;; Window navigation
