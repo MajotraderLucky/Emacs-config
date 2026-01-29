@@ -163,6 +163,24 @@
 (use-package json-mode)
 (use-package dockerfile-mode)
 
+;;; ============ FILE TREE ============
+
+(use-package treemacs
+  :bind (("C-c e" . treemacs)
+         ("C-c E" . treemacs-select-window))
+  :custom
+  (treemacs-width 35)
+  (treemacs-git-mode 'deferred)
+  (treemacs-show-hidden-files t))
+
+(use-package treemacs-nerd-icons
+  :after (treemacs nerd-icons)
+  :config
+  (treemacs-load-theme "nerd-icons"))
+
+(use-package treemacs-magit
+  :after (treemacs magit))
+
 ;;; ============ TERMINAL ============
 
 (use-package vterm
@@ -174,9 +192,21 @@
 
 ;;; ============ GIT ============
 
+(use-package magit
+  :bind (("C-c g g" . magit-status)
+         ("C-c g l" . magit-log-current)
+         ("C-c g b" . magit-blame)
+         ("C-c g d" . magit-diff-buffer-file)
+         ("C-c g f" . magit-file-dispatch))
+  :custom
+  (magit-display-buffer-function #'magit-display-buffer-same-window-except-diff-v1)
+  (magit-diff-refine-hunk 'all))
+
 (use-package diff-hl
   :hook ((prog-mode . diff-hl-mode)
-         (text-mode . diff-hl-mode))
+         (text-mode . diff-hl-mode)
+         (magit-pre-refresh . diff-hl-magit-pre-refresh)
+         (magit-post-refresh . diff-hl-magit-post-refresh))
   :config
   (diff-hl-flydiff-mode))
 
