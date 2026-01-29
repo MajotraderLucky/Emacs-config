@@ -83,6 +83,12 @@ Uses built-in `package.el` with `use-package` for declarative configuration.
 |---------|------------------------------------|
 | eshell  | Emacs shell (built-in, no freezes) |
 
+### Messaging
+
+| Package | Purpose                            |
+|---------|------------------------------------|
+| telega  | Telegram client (requires TDLib)   |
+
 ## Keybindings
 
 ### File & Search (C-c f)
@@ -143,6 +149,7 @@ Uses built-in `package.el` with `use-package` for declarative configuration.
 | C-c t     | eshell                 | Open terminal        |
 | C-c /     | comment-line           | Toggle comment       |
 | C-x k     | kill-current-buffer    | Close buffer         |
+| F9        | telega                 | Open Telegram        |
 
 ## Magit Quick Reference
 
@@ -182,6 +189,42 @@ Eshell is a built-in Emacs shell. All standard Emacs keybindings work.
 - TRAMP paths: `cd /ssh:user@host:/path`
 - Output is editable text
 
+## Telega Quick Reference
+
+Telegram client for Emacs. Requires TDLib installed separately.
+
+**Root buffer (chat list):**
+
+| Key     | Action                  |
+|---------|-------------------------|
+| n / p   | Next/previous chat      |
+| RET     | Open chat               |
+| F       | Show folders            |
+| 1-9     | Jump to folder 1-9      |
+| TAB     | Next folder             |
+| S-TAB   | Previous folder         |
+| s       | Search                  |
+| g       | Refresh                 |
+| q       | Quit telega             |
+
+**In chat:**
+
+| Key     | Action                  |
+|---------|-------------------------|
+| m       | Write message           |
+| r       | Reply to message        |
+| e       | Edit message            |
+| d       | Delete message          |
+| C-c C-a | Attach file             |
+| q       | Back to chat list       |
+| C-g     | Cancel input            |
+
+**First run:**
+1. Press F9 or `M-x telega`
+2. Enter phone number (+79001234567)
+3. Enter code from SMS/Telegram
+4. Enter 2FA password if enabled
+
 ## Basic Settings
 
 - **Encoding:** UTF-8
@@ -220,6 +263,26 @@ rustup component add rust-analyzer
 
 Then restart Emacs or run `M-x package-install`.
 
+## Installing TDLib (for Telega)
+
+Telega requires TDLib library. Build from source:
+
+```bash
+# Install dependencies
+sudo apt install -y make git zlib1g-dev libssl-dev gperf cmake g++
+
+# Download and build TDLib
+cd /tmp
+wget https://github.com/tdlib/td/archive/refs/heads/master.zip
+unzip master.zip
+cd td-master
+mkdir build && cd build
+cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr/local ..
+cmake --build . -j$(nproc)
+sudo cmake --install .
+sudo ldconfig
+```
+
 ## Troubleshooting
 
 **Packages not installing:**
@@ -236,3 +299,8 @@ emacs --debug-init
 ```
 M-x eval-buffer  # in init.el buffer
 ```
+
+**Telega not working:**
+- Ensure TDLib is installed: `ls /usr/local/lib/libtdjson*`
+- Re-login: `M-x telega-logout`, then `F9`
+- Clear session: `rm -rf ~/.telega`
